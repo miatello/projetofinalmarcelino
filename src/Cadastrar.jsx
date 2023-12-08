@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 export default function cadastrar() {
-  const [atividade, setAtividade] = useState("");
-  const [lista, setLista] = useState([]);
+  const [lista, setLista] = useState("");
+  const [id, setId] = useState([]);
   const [url, seturl] = useState(1);
   const [nome, setnome] = useState(1);
   const [artista, setartista] = useState(1);

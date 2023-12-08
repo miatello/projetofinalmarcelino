@@ -5,6 +5,8 @@ function Cards ({ ListaVideos }) {
 
     return (
 
+        const videos = JOSN.parse(localstorage.getId("Lista")) || [];
+
     ListaVideos.map((video) => 
     <div className="card">
         <iframe
