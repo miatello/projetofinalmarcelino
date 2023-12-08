@@ -5,7 +5,7 @@ import Home from './Home'
 import Cadastrar from "./Cadastrar"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <React.StrictMode>""
      <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}></Route>
