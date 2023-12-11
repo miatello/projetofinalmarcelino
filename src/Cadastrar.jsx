@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 export default function cadastrar() {
+  const Lista = JSON.parse(localStorage.getItem("Lista")) || [];
   const [lista, setLista] = useState("");
   const [id, setId] = useState([]);
   const [url, seturl] = useState(1);
   const [nome, setnome] = useState(1);
-  const [artista, setartista] = useState(1);
+  const [artista, setArtista] = useState(1);
 
   const salvar = (e) => {
     e.preventDefault();
@@ -26,10 +27,9 @@ export default function cadastrar() {
 
   return (
     <div>
-      <Link to="/">home</Link>
-      <h1>JCadastrar</h1>
+      <h1>Cadastrar vídeo</h1>
       <form onSubmit={salvar}>
-        <p>Nome:</p>
+        <p>Canal:</p>
         <input
           type="text"
           value={lista}
@@ -38,31 +38,31 @@ export default function cadastrar() {
           }}
         />
 
-        <p>Gol:</p>
+        <p>Nome do video:</p>
         <input
-          type="number"
+          type="text"
           value={url}
           onChange={(e) => {
             seturl(e.target.value);
           }}
         />
-        <p>Idade:</p>
+      
+        <p>Artista:</p>
         <input
           type="text"
           value={nome}
           onChange={(e) => {
-            setnome(e.target.value);
+            setArtista(e.target.value);
           }}
         />
         <button>ADICIONAR</button>
       </form>
-      {lista.map((lista) => (
+      {Lista.map((lista) => (
         <ul key={lista.id}>
           <li>
             <p>{lista.lista}</p>
             <p>gol:{url.lista}</p>
             <p>idade:{nome.lista}</p>
-            <button onClick={() => remover(lista.id)}>Remover</button>
           </li>
         </ul>
       ))}

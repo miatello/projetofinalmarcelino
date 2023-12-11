@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom"
 import "../style/card.css"
 
-function Cards ({ ListaVideos }) {
+export default function Home (){
+    const videos = JOSN.parse(localstorage.getId("Lista")) || [];
+    console.log(videos)
 
     return (
 
-        const videos = JOSN.parse(localstorage.getId("Lista")) || [];
-
-    ListaVideos.map((video) => 
+   Lista.map((video) => ( 
     <div className="card">
         <iframe
         width="853"
@@ -17,12 +17,12 @@ function Cards ({ ListaVideos }) {
         allow=""
 ></iframe>
 </div>
-))};
+)))}
 
 <div className="container">
     <Menu/>
     <NavBar nomeSite={"Nome do Site"} />
     <div className="card-container">
-        <Cards ListaVideos={ListaVideos} />
+        <Cards Lista={Listavideos} />
     </div>
 </div>
