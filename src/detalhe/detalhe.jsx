@@ -6,14 +6,14 @@ import './detalhe.css';
 export default function Detalhe() {
     const { id } = useParams();
     const videos = JSON.parse(localStorage.getItem('lista')) || [];
-    const buscarPorId = videos.find((video) => video.id == id) || null;
+    const buscaId = videos.find((video) => video.id == id) || null;
 
     return (
         <div className="container">
             <div className="video-container">
-                <Card ytb={buscarPorId} />
-                <p className="description">{buscarPorId.descricao}</p>
-                <Link to="/" className="link-back">Voltar para o Home</Link>
+                <Card ytb={buscaId} />
+                <p className="description">{buscaId.descricao}</p>
+                <Link to="/" className="link-back">Home</Link>
             </div>
         </div>
     );

@@ -9,23 +9,19 @@ export default function Home() {
   return (
     <div className="container">
       <div className="header">
-        <h1>Your Tube</h1>
-        <p>Sua página de vídeos favorita!!!</p>
+        <h1>Let´s Vídeos</h1>
+        <p>Favoritos, tmj eh nois</p>
       </div>
 
       <div className="links">
-        <Link to="/todo">Ir para próxima página</Link>
-        <Link to="/destaque">Ir para o destaque</Link>
+        <Link to="/todo">ota pág</Link>
+        <Link to="/destaque">destaque</Link>
       </div>
 
       <div className="videos">
         {videos.map((video, index) => (
           <Card key={index} ytb={video} />
         ))}
-      </div>
-
-      <div className="footer">
-        <p>&copy; 2023 Your Tube - Todos os direitos reservados</p>
       </div>
     </div>
   );
