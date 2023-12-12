@@ -8,8 +8,8 @@ export default function ToDo() {
   const [lista, setLista] = useState(listaLocalStorage || []);
   const [id, setId] = useState(listaLocalStorage[listaLocalStorage.length - 1]?.id + 1 || 1);
   const [url, setUrl] = useState('');
-  const [descricao, setDescricao] = useState('');
   const [canal, setCanal] = useState('');
+  const [descricao, setDescricao] = useState('');
 
   useEffect(() => {
     localStorage.setItem('lista', JSON.stringify(lista));
