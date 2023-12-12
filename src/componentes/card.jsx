@@ -14,8 +14,8 @@ export default function Card({ ytb }) {
         height="200"
         src={`https://www.youtube.com/embed/${urlId}`}
         title="Vídeo"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
       ></iframe>
     </div>
   );

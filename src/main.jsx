@@ -5,6 +5,7 @@ import Home from './Home/Home';
 import ToDo from './Todo/ToDo';
 import Detalhe from './Detalhe/detalhe.jsx'
 import Destaque from './Destaque/destaque.jsx';
+import './style.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
