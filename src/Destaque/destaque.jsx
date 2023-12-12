@@ -10,6 +10,7 @@ export default function Destaque() {
     <div className="container">
       <div className="header">
         <h1>Let´s Vídeos</h1>
+        <h2>Destaques</h2>
       </div>
       <div className="vi">
         {videos.slice(-4).map((video, index) => (                           

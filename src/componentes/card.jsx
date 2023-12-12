@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Card.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Card.css";
 export default function Card({ ytb }) {
   const urlId = ytb.url.slice(17);
 
@@ -15,7 +15,8 @@ export default function Card({ ytb }) {
         src={`https://www.youtube.com/embed/${urlId}`}
         title="Vídeo"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
       ></iframe>
     </div>
   );
