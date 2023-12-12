@@ -11,7 +11,7 @@ export default function Destaque() {
       <div className="header">
         <h1>Let´s Vídeos</h1>
       </div>
-      <div className="timeline">
+      <div className="vi">
         {videos.slice(-4).map((video, index) => (                           
           <Card key={index} ytb={video} />      
         ))}
