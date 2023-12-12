@@ -33,35 +33,28 @@ export default function ToDo() {
 
   return (
     <div className="container">
-      <div className="links">
-        <Link to="/destaque">Ir para Destaque</Link>
-        <Link to="/">Voltar para o Home</Link>
-      </div>
       <div className="form-container">
-        <h1>Your Tube</h1>
+        <h1>cadastrar</h1>
         <form onSubmit={salvar}>
-          <label>Nome do vídeo:</label>
+          <label>Nome:</label>
           <input
             type="text"
             value={video}
-            onChange={(e) => setVideo(e.target.value)}
-            placeholder="Nome do vídeo"
+            onChange={(e) => setVideo(e.target.value)}  
           />
-          <label>URL do vídeo:</label>
+          <label>URL:</label>
           <input
             type="text"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
-            placeholder="URL do vídeo"
           />
-          <label>Descrição do vídeo:</label>
+          <label>Desc:</label>
           <input
             type="text"
             value={descricao}
             onChange={(e) => setDescricao(e.target.value)}
-            placeholder="Descrição do vídeo"
           />
-          <button>Registrar Vídeo</button>
+          <button>cadastrar</button>
         </form>
       </div>
     </div>
