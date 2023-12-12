@@ -1,0 +1,41 @@
+.container {
+  font-family: Arial, sans-serif;
+  background: #3498db;
+  margin: 0;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #0a0a0a;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #090909;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #f2f3f4;
+  color: #050505;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0579ee;
+}

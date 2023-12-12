@@ -9,6 +9,7 @@ export default function ToDo() {
   const [id, setId] = useState(listaLocalStorage[listaLocalStorage.length - 1]?.id + 1 || 1);
   const [url, setUrl] = useState('');
   const [descricao, setDescricao] = useState('');
+  const [canal, setCanal] = useState('');
 
   useEffect(() => {
     localStorage.setItem('lista', JSON.stringify(lista));
@@ -23,12 +24,14 @@ export default function ToDo() {
         id: id,
         url: url,
         descricao: descricao,
+        canal: canal,
       },
     ]);
     setId(id + 1);
     setVideo('');
     setUrl('');
     setDescricao('');
+    setCanal('');
   };
 
   return (
@@ -36,25 +39,37 @@ export default function ToDo() {
       <div className="form-container">
         <h1>cadastrar</h1>
         <form onSubmit={salvar}>
-          <label>Nome:</label>
+          <label>Nome do vídeo:</label>
           <input
             type="text"
             value={video}
             onChange={(e) => setVideo(e.target.value)}  
           />
-          <label>URL:</label>
+          <br></br>
+          <br></br>
+          <label>URL do vídeo:</label>
           <input
             type="text"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
           />
-          <label>Desc:</label>
+          <br></br>
+          <br></br>
+          <label>Desc do vídeo:</label>
           <input
             type="text"
             value={descricao}
             onChange={(e) => setDescricao(e.target.value)}
           />
-          <button>cadastrar</button>
+          <br></br>
+          <br></br>
+          <label>Nome do canal:</label>
+          <input
+            type="text"
+            value={canal}
+            onChange={(e) => setCanal(e.target.value)}
+          />
+          <button >cadastrar</button>
         </form>
       </div>
     </div>
