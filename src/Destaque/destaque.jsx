@@ -16,9 +16,6 @@ export default function Destaque() {
           <Card key={index} ytb={video} />      
         ))}
       </div>
-      <div className="links">
-        <Link to="/" className="button-link">Home</Link>
-      </div>
     </div>
     
   );

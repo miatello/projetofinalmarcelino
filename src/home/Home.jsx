@@ -14,12 +14,13 @@ export default function Home() {
 
       <div className="links">
         <Link to="/todo">cadastrar</Link>
+        <br></br>
         <Link to="/destaque">destaque</Link>
       </div>
 
       <div className="videos">
-        {videos.map((video, index) => (
-          <Card key={index} ytb={video} />
+        {videos.map((viideo, index) => (
+          <Card key={index} ytb={viideo} />
         ))}
       </div>
     </div>
